@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGBOT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div id="inputbox">
+
+            <div
+                class="chatbot_header border border-red d-flex justify-content-between align-items-center py-1 px-2 text-white">
+
+                <div class="d-flex align-items-center gap-2">
+                    <img class="chatbot_image"
+                        src="https://img.freepik.com/free-vector/chatbot-chat-message-vectorart_78370-4104.jpg"
+                        alt="chatbot_image">
+                    <h5 class="text-center m-0">SG bot</h5>
+                </div>
+
+                <button id="disapperInputBox"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div id="output" style="height:80%">
+                <div id="welcome" class="mt-5">
+
+                    <h4 class=" text-center">Thanks for using my chatbot</h4>
+                </div>
+                <div id="answer" class="d-flex flex-column gap-2 overflow-x-hidden text-wrap">
+
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center px-2 takeInput gap-2">
+                <input type="text" placeholder="Type your question here...." id="inp">
+                <button id="btn"><i class="bi bi-send"></i></button>
+            </div>
+
+        </div>
+    <button id="icon"><i class="bi bi-chat-text-fill"></i></button>
+    <script src="./script.js"></script>
+</body>
+
+</html>

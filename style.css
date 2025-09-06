@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#inputbox {
+    display: none;
+    position: fixed;
+
+    right: 20px;
+    bottom: 30px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+    width: 30vw;
+    animation:up 2s ease forwards
+}
+@keyframes up {
+    0%{
+        height:0%;
+    }100%{
+        height:90vh;
+    }
+    
+}
+
+.chatbot_header {
+    height: 10%;
+    background-color: black;
+}
+
+.chatbot_image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%
+}
+
+#disapperInputBox {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    border-style: none;
+}
+
+.output {
+    height: 80%;
+}
+
+#answer {
+    overflow-y: scroll;
+    height: 98%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#btn {
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+}
+
+.takeInput {
+    border-radius: 50px;
+    position: absolute;
+
+    bottom: 5px;
+    height: 10%;
+    width: 95%;
+    border: 2px solid black;
+}
+
+#inp {
+    height: 70%;
+    width: 90%;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+
+    margin-left: 10px
+}
+
+#inp:focus {
+    outline: none;
+    border: none;
+}
+
+#icon {
+    position: fixed;
+    right: 20px;
+    bottom: 35px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.loader {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #3498db;
+    display: none;
+    animation: spin 0.8s linear infinite;
+    flex-shrink: 0;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 575.98px) {
+    #inputbox {
+        width: 95vw;
+        height: 100vh;
+        margin-left: 6px;
+        margin-right: 3px;
+        right: 8px;
+        bottom: 10px;
+    }
+    @keyframes up {
+    0%{
+        height:0%;
+    }100%{
+        height:90vh;
+    }
+    
+}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #inputbox {
+        width: 60vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #inputbox {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #inputbox {
+        width: 40vw;
+    }
+}
